@@ -1,0 +1,24 @@
+const empMonthlyWage = () =>
+{
+    if (Math.random(autoCheck) ) 
+    {
+        empWorkingHrs = 8;    
+    } 
+    else 
+    {
+        empWorkingHrs = 4;
+    }
+    for(var empSalary = 1; empSalary <=30; empSalary++)
+    {
+        empWage += + (empWorkingHrs * empSalaryPerHrs);
+    }
+    return empWage;
+}
+
+var empWorkingHrs;
+var empSalaryPerHrs = 20;
+var autoCheck = Math.random()*(2)+0;
+var empWage = 0;
+
+let result = empMonthlyWage(empWage);
+console.log(result);
