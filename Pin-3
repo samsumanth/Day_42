@@ -1,0 +1,25 @@
+class PinCode {
+
+    validatePin()
+    {
+        let reg = /[^a-z][1-9][^\D]/;
+        let pincode = "pincode = a415002@";
+
+        console.log(reg);
+        console.log(reg.source);
+        let result = reg.exec(pincode);
+        console.log(result);
+        if (result != null) 
+        {
+            console.log("Valid pattern");    
+        }
+        else
+        {
+            console.log("Incorrect Email:");
+        }
+
+    }
+}
+
+var obj = new PinCode();
+obj.validatePin();
